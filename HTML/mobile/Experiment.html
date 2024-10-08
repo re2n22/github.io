@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="css/main.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body style="background-color: #eee">
+
+    <!-- 상단 바 -->
+    <div class="header" id="header">
+        <!-- 왼쪽 아이콘 -->
+        <div class="left-icons">
+            <img src="icon1.png" alt="Left Icon 1">
+        </div>
+
+        <!-- 가운데 아이콘 -->
+        <div class="center-icons">
+            <img src="icon3.png" alt="Center Icon 1">
+        </div>
+
+        <!-- 오른쪽 아이콘 -->
+        <div class="right-icons">
+            <img src="icon4.png" alt="Right Icon 1">
+        </div>
+    </div>
+
+    <script>
+        // 스크롤 이벤트 감지
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) { // 스크롤이 100px 이상일 때 상단 바 표시
+                header.classList.add('show');
+            } else {
+                header.classList.remove('show');
+            }
+        });
+
+    </script>
+
+    <div class="container">
+        <!-- 상단 버튼 바 -->
+        <div class="header2">
+            <!-- 좌측 버튼 -->
+            <button class="left-button">
+                <img src="menu-icon.png" alt="Menu Icon">
+            </button>
+
+            <!-- 우측 버튼 -->
+            <button class="right-button">
+                <img src="notification-icon.png" alt="Notification Icon">
+            </button>
+        </div>
+
+        <!-- 중앙 로고 -->
+        <div class="logo">
+            <img src="img/kyaru.jpg" class="img-size">
+        </div>
+
+        <!-- 팀 이름 -->
+        <div class="title">구숲</div>
+        <div class="subtitle">영상음악팀</div>
+
+        <!-- 중앙 아이콘 버튼 섹션 -->
+        <div class="icons">
+            <button>
+                <img src="instagram-icon.png" alt="Instagram">
+            </button>
+            <button>
+                <img src="talk-icon.png" alt="Talk">
+            </button>
+            <button>
+                <img src="email-icon.png" alt="Email">
+            </button>
+        </div>
+
+        <!-- 영화 리스트 섹션 -->
+        <div class="film-section">
+            <h2>FILM</h2>
+            <div class="film-list">
+                <div class="film-item">
+                    ~2022<br>
+                    건국대학교 졸업영화 &lt;ANT+ER&gt; 작곡<br>
+                    &lt;XX&gt; 작곡<br>
+                    &lt;소실점&gt; 작곡<br>
+                    &lt;엄마&gt; 작곡
+                </div>
+
+                <div class="film-item">
+                    2023<br>
+                    단편영화 &lt;창귀&gt; 작곡/음향<br>
+                    - 제 20회 제천국제음악영화제 한국 단편 경쟁작<br>
+                    - 제 4회 금천패션영화제 경쟁작
+                </div>
+
+                <div class="film-item">
+                    단편영화 &lt;이리할멈&gt; 작곡<br>
+                    - 제 26회 정동진독립영화제 상영작<br>
+                    - 제 13회 대단한 단편영화제 경쟁작<br>
+                    - 제 10회 경기필름스쿨페스티벌 상영작
+                </div>
+
+                <div class="film-item">
+                    단편영화 &lt;앵두의 꿈> 작곡<br>
+                    - 제 13회 국제프라이드영화제 경쟁작<br>
+                    - 제 6회 서울여성독립영화제 경쟁작<br>
+                </div>
+
+                <div class="film-item">
+                    단편영화<br>
+                    &lt;Way Out> 작곡<br>
+                    &lt;남자와 안마의자> 작곡<br>
+                    &lt;소화불량> 작곡<br>
+                    &lt;잔뼈> 작곡<br>
+                    &lt;낯> 작곡<br>
+                </div>
+
+                <div class="film-item">
+                    2024<br>
+                    단편영화<br>
+                    &lt;구태여, 사랑한단 말은 하지 않겠다> 작곡<br>
+                    &lt;삽질> 작곡<br>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 긴 스크롤 공간 -->
+
+    <div class="spacer"></div>
+
+
+
+
+
+</body>
+
+</html>

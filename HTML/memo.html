@@ -1,0 +1,422 @@
+<!------------------------
+
+html 파일 기본 템플릿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+  
+</body>
+</html>
+
+-------------------------->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+    
+    <!--Lesson 1 html 기본 태그로 글 작성하기-->
+    <div>
+        <div class="lessonname">
+            <p class="lessonnamep"> 
+                1. HTML 기본 태그로 글 작성하기
+            </p>
+        </div>
+        <p class="bonmoon">
+            html은 태그로 작성함<br>
+            태그들을 열고 닫은 후 내부에 글, 그림등을 넣을 수 있음.<br>
+            태그들은 종류와 용도가 매우 다양하며 매우 많이 존재.<br>
+            기본적인 태그들을 알아보자<br><br>
+            ----------------------------<br><br>
+            <span style="color:red">
+            &lt;p&gt;글 본문&lt;/p&gt;<br>
+            &lt;h1&gt;글 제목&lt;/h1&gt;<br>
+            &lt;img src="이미지 경로"&gt;<br>
+            &lt;a href="링크주소"&gt;하이퍼링크&lt;/a&gt;<br>
+            &lt;button&gt;버튼&lt;/button&gt;<br>
+            &lt;ul&gt;리스트&lt;li&gt;
+            &lt;/li&gt;리스트&lt;/ul&gt;<br>
+            &lt;ol&gt;리스트&lt;li&gt;
+            &lt;/li&gt;리스트&lt;/ol&gt;<br><br>
+            </span>
+            이처럼 용도에 맞게 태그를 사용하면 된다.<br>
+        </p>
+    </div>
+    
+<!------------------------------------------------->
+    
+    <!--Lesson 2 기본적인 웹 페이지 스타일링-->
+    <div>
+        <div class="lessonname">
+            <p class="lessonnamep"> 
+                2. 기본적인 웹 페이지 스타일링
+            </p>        
+        </div>    
+            <p class="bonmoon">
+                간단히 스타일링을 넣는법<br><br>
+                
+                <span style="color:red">
+                &lt;p style="font-size: 10px; color: red"&gt; 글자 &lt;/p&gt;<br><br>
+                </span>
+                
+                거의 모든 태그는 style=""이라는 속성을 열 수 있음.<br>
+                거기 안에 스타일이름:스타일 값; 형식으로 스타일 적용가능<br>
+                여러개를 넣을 때는 쭉 스타일을 적되 세미콜론을 뒤에 써야함.
+                <br><br>
+                
+                자주 사용하는 글자 스타일들<br><br>
+                
+                <span style="color:red">
+                    
+                font-size: 20px;<br>
+                font-family: 'gulin';<br>
+                color: black;<br>
+                letter-spacing: -1px;<br>
+                text-align: center;<br>
+                font-weight: 500;<br><br>
+                </span>
+                    
+                이미지 정렬과 폭 조정<br><br>
+                
+                <span style="color:red">
+                display: black;<br>
+                margin-left: auto;<br>
+                margin-right: auto;<br>
+                width: 150px;<br><br>
+                </span>
+                
+                이미지는 width를 많이 씀. px또는 %로 폭 조정 가능.<br>
+                이미지를 가운데 정렬하고 싶으면<br>
+                display: block; margin-left: auto; margin-right: auto를 기입할 것.<br><br>
+                
+                텍스트의 일부만 스타일을 변경하고 싶을 때는
+                &lt;span&gt;태그로 감싼 뒤 스타일을 따로 주면 된다.<br>
+                &lt;strong&gt;태그는 글자굵기를 굵게 표현가능<br><br>
+                
+                (참고)span태그는 display:inline이라는 스타일속성을 내포하고 있으며<br>
+                display: inline을 가지고 있는 요소는 폭, 높이등을 설정할 수 없음.<br>
+                폭이나 높이를 주고싶다면 span을 감싸고있는 p에 줄 것.
+            </p>
+    </div>
+        
+<!------------------------------------------------->
+    
+    <!--Lesson 3 CSS파일 만들고 첨부하는 법-->
+    <div>
+        <div class="lessonname">
+            <p class="lessonnamep"> 
+                3. CSS파일 만들고 첨부하는 법
+            </p>        
+        </div>    
+            <p class="bonmoon">
+                style 속성 안에 들어갈 코드가 길어지면 html이 더러워지기 때문에 이걸 따로 작성 할 수 있음. CSS라는 파일로 빼면 됨.<br><br>
+                CSS파일을 사용하려면 CSS파일을 만든 후에 html에 첨부해야함.<br>
+                먼저 작업폴더에 .css로 끝나는 파일을 만든 후에 html파일로 돌아와서<br><br>
+                <span style="color:red">
+                    &lt;link href="~~css파일경로" rel="stylesheet"&gt;<br><br>
+                </span>
+                head태그 안에 link태그를 넣고 href라는 속성에 css파일 경로를 지정해놓으면 css파일 이용가능.<br>
+                이제 css파일에서 스타일작성이 가능. 정확한 방법은<br><br>
+                
+                1. css파일에 스타일을 집어넣고 .어쩌고 작성<br><br>
+                <span style="color:red">
+                .profile{<br>
+                    width: 200px;<br>
+                    height: 200px;<br>
+                    display: block;<br>
+                    margin: auto;<br>
+                }<br><br>
+                </span>    
+                
+                스타일을 적고 .어쩌고 대충 작명하고{}중괄호로 묶기.<br>
+                위와 같은 형태를 클래스라고 부름.<br><br>
+                
+                2. html에 클래스명을 첨부하여 스타일을 넣을 수 있음.<br>
+                <br>
+                <span style="color:red">
+                &lt;img src="kyaru.jpg" class="profile"&gt;<br><br>
+                </span>
+                
+                class속성을 열고 클래스명을 집어넣으면 css파일에서 묶어놨던 스타일들이 전부 적용됨.<br><br>
+                
+                3. brackets에디터에선 클래스작성과 편집이 편함.<br>
+                class대충 작성하고 command+e하면 바로 열림.<br><br>
+                
+                class말고 다른 식으로도 스타일을 묶을 수 있는데<br><br>
+                
+                <span style="color: red">
+                .class {width: 200px} 
+                    <span style="color: gray">
+                        // 클래스<br>
+                    </span>
+                #special {width: 200px} 
+                    <span style="color: gray">
+                        // 아이디<br>
+                    </span>
+                div {width: 200px}
+                    <span style="color: gray">
+                        // 태그<br>
+                    </span>    
+                </span><br>
+                CSS selector라고 칭하는것들.<br>
+                클래스 selector는 클래스명{}이렇게 적고 class="클래스명"을 가진 요소에 스타일 적용가능<br>
+                아이디 selector는 #아이디{}이렇게 적고 id="아이디명"속성을 가진 요소에 스타일을 적용가능.<br>
+                태그 selector는 div{스타일~~}이렇게 적고 모든div태그에 스타일을 적용가능.<br>
+                .은 클래스, #은 아이디<br><br>
+                셀렉터의 우선순위도 따로 있음.<br><br>
+                style""(1000++)<br>
+                #id(100++)<br>
+                .class(10++)<br>
+                tag(1)<br>
+                숫자가 높을수록 우선 적용됨.
+                
+            </p>
+    </div>
+    
+<!------------------------------------------------->
+    
+    <!--Lesson 4 div를 이용한 네모박스 디자인-->
+    <div>
+        <div class="lessonname">
+            <p class="lessonnamep"> 
+                4. div를 이용한 네모박스 디자인
+            </p>        
+        </div>    
+            <p class="bonmoon">
+                네모박스 디자인에 많이 사용하는 css속성들<br><br>
+                <span style="color: red">
+                    .box{<br>
+                        margin: 20px;<br>
+                        padding: 30px;<br>
+                        border: 1px solid black;<br>
+                        border-radius: 5px;<br>
+                    }<br><br>
+                </span>
+                
+                margin은 바깥 여백,<br>
+                padding은 안쪽 여백,<br>
+                border는 테두리(순서대로 두께, 선의 종류, 색상)<br>
+                border-radius는 테두리 둥글게 처리.<br>
+                가운데 정렬도 많이 하지만 저번이미지처럼 마진오토주면 됨.<br><br>
+                마진과 패딩은 원하는 방향에만 줄 수 있음.<br><br>
+                
+                <span style="color: red">
+                    .box{<br>
+                        margin-top: 20px;<br>
+                        padding-top: 20px;<br>
+                    }<br><br>
+                </span>
+                top, left, bottom, right로 원하는 방향에 원하는 만큼 여백을 줄 수 있음.<br>
+                (참고)마진은 음수도 사용가능. -20px이런식으로.<br>
+                (참고)margin:1px 2px 3px 4px; 이렇게 띄어쓰기를 이용해 작성하면 차례대로 상 우 하 좌 마진을 한번에 줄 수 있음.
+                <br><br>
+                
+                display: block이 내장되어있는 div박스<br><br>
+                <span style="color: red">
+                    .box{<br>
+                        display: block<br>
+                    }<br><br>
+                </span>
+                모든 div, p, h1, li등은 display: block속성을 기본으로 가지고 있음.<br>
+                그래서 p, div태그를 그냥 사용하면 한 행을 전부 차지하게 됨<br>
+                이게 싫다면 display속성을 다른것으로 부여할 것.<br>
+                display:inline, inline-block, flex등 여러가지가 존재함<br><br>
+                
+                일부 스타일은 inherit됨.<br>
+                font-size, color, font-family, text-align이런 속성들은 부모태그에 주면 자식태그까지 전부 상속됨.<br>
+                안에 태그들이 많으면 전부 font-size를 따로 작성 할 필요가 없이 부모태그에만 주면 되서 편리함.<br>
+                전부 상속되는것은 아니고 글자와 관련된 스타일들이 주로 상속됨.
+            </p>
+    </div>
+    
+<!------------------------------------------------->
+    <div style="width: 100%;height: 30px; background-color: aqua"></div>
+    <!--Lesson 5 호환성 좋은 float-->
+    <div>
+        <div class="lessonname">
+            <p class="lessonnamep"> 
+                5. 호환성 좋은 float
+            </p>        
+        </div>    
+            <p class="bonmoon">
+                html css로 사이트 레이아웃 만들기:<br>
+                만들고 싶은 레이아웃 디자인 위에 네모박스를 먼저 그리고 바깥네모부터 div써서 구현하면 됨.<br>
+                어려워보이는 레이아웃도 네모박스부터 위에 그려보고 바깥네모부분부터 div로 하나하나 만들면<br>
+                어떤 레이아웃이던 쉽게 만들기 가능<br><br>
+                
+                요소를 공중에 띄워 왼쪽/오른쪽 정렬하는 float속성<br><br>
+                <span style="color: red">
+                    &lt;div&gt;<br>
+                        &lt;div class="left-box"&gt;&lt;/div&gt;<br>
+                        &lt;div class="right-box"&gt;&lt;/div&gt;<br>
+                    &lt;/div&gt;<br><br>
+                    
+                    .left-box{<br>
+                        width: 100px;<br>
+                        height: 100px<br>
+                        float: left;<br>
+                    }<br><br>
+                    .right-box{<br>
+                        width: 100px;<br>
+                        height: 100px<br>
+                        float: left;<br>
+                    }<br><br>
+                        
+                </span>
+                
+                위의 코드는 박스 두개를 만들어 각각 왼쪽으로 정렬시킴<br>
+                하지만 float를 쓰면 요소를 띄우다보니 다음에 오는 html요소들이 자리를 찾지 못함.<br>
+                (참고)float속성으로 가로정렬할땐 float박스들을 싸매는 하나의 큰 div박스를 만들고 폭을 지정하는것이 좋음.<br>
+                그래야 모바일에서 안흘러넘침.<br><br>
+                
+                float를 쓰고나면 clear속성이 필요하다.<br><br>
+                
+                <span style="color: red">
+                    &lt;div&gt;<br>
+                    &lt;div class="left-box"&gt;&lt;/div&gt;<br>
+                    &lt;div class="right-box"&gt;&lt;/div&gt;<br>
+                    &lt;div class="footer&gt;&lt;/div&gt;
+                    <br>
+                    &lt;/div&gt;<br><br>
+                
+                    .footer{<br>
+                        clear: both<br>
+                    }<br><br>
+                
+                </span>
+                
+                clear속성을 사용하면 float다음에 오는 박스들이 제자리를 찾게 됨.<br>
+                float를 썼다면 까먹지 말고 항상 넣을것.<br>
+                (참고)float:none이것도 추가해주는게 나중에 버그에방차원에서 좋음.<br><br>
+                
+                상대적 크기단위인 %단위<br><br>
+                
+                <span style="color: red">
+                    .box{<br>
+                        width: 80%<br>
+                    }<br><br>
+                </span>
+                이 경우 내 부모태그의 width에 비해 80%를 차지하게 된다는 뜻.<br>
+                부모태그는 나를 감싸고있는 태그를 뜻함.
+            </p>
+    </div>
+    
+<!------------------------------------------------->
+    
+    <!--Lesson 6 귀찮은 inline-block-->
+    <div>
+        <div class="lessonname">
+            <p class="lessonnamep"> 
+                6. 귀찮은 inline-block
+            </p>        
+        </div>    
+            <p class="bonmoon">
+                display: inline-block 사용법<br><br>
+                
+                <span style="color: red">
+                    &lt;div&gt;<br>
+                    &lt;div class="left-box"&gt;&lt;/div&gt;
+                    &lt;div class="right-box"&gt;&lt;/div&gt;<br>
+                    &lt;/div&gt;
+                    <br><br>
+                    
+                    .left-box{<br>
+                        width: 100px;<br>
+                        height: 100px;<br>
+                        display: inline-block;<br>
+                    }<br><br>
+                    
+                    .right-box{<br>
+                        width: 100px;<br>
+                        height: 100px;<br>
+                        display: inline-block;<br>
+                    }<br><br>
+                </span>
+                
+                위의 코드는 박스를 만들어 왼쪽으로 정렬시키는 코드이다.<br>
+                display속성만 inline-block으로 조정하면 가로로 배치가 가능하다.<br>
+                inline-block은 '내 폭과 높이만큼 자리차지 하겠다'라는 뜻이다.<br>
+                간편하지만 태그사이에 공백이 있다면 그대로 보여주기 때문에<br>
+                가로로 정렬하려면 태그사이의 공백도 제거해주어야 한다.<br><br>
+                
+                공백제거 편법 1. 주석처리 기호 사용하기<br><br>
+                
+                <span style="color: red">
+                    &lt;div&gt;<br>
+                    &lt;div class="left-box"&gt;&lt;/div&gt;
+                    &lt;!--<br>
+                    --&gt;&lt;div class="right-box"&gt;&lt;/div&gt;<br>
+                    &lt;/div&gt;
+                    <br><br>
+                </span>
+                
+                주석은 실행되지 않는 코드기 때문에 주석으로 줄바꿈을 하면 된다.<br><br>
+                
+                공백제거 편법 2. 부모의 폰트사이즈를 0으로 만들기<br><br>
+                
+                <span style="color: red">
+                    &lt;div style="font-size: 0px;"&gt;<br>
+                    &lt;div class="left-box"&gt;&lt;/div&gt;<br>
+                    &lt;div class="right-box"&gt;&lt;/div&gt;<br>
+                    &lt;/div&gt;
+                    <br><br>
+                </span>
+                
+                font-size의 속성은 상속되기 때문에 안에 있는 div와 그 사이에 있는 공백도 font-size가 0p가 된다.<br>
+                이러면 html은 깔끔해 질 수 있으나 css가 더러워질 수 있으니 취사선택할것
+            </p>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</body>
+</html>
+
